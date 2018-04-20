@@ -16,7 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.ssh.forward_agent = true
     
   config.vm.provider :virtualbox do |vb, override|
-    vb.name = 'ubuntu-xenial64'    
+    vb.name = 'ubuntu-trust64'    
     
     #config.vm.network "forwarded_port", guest: 80, host: 8080
     #config.vm.network "forwarded_port", guest: 443, host: 8443

@@ -5,7 +5,7 @@ This project intends to create a set of Vagrant configurations for various Ubunt
 
 This is an independant effort and is not related to the Ubuntu organisation.
 
-**This branch:** Ubuntu 14.04.x (trusty)
+**This branch:** Ubuntu 14.04.x (Trusty Tahr)
 
 ## Structure
 
