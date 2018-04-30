@@ -9,22 +9,22 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
- config.vm.box = "ubuntu/xenial64"
+ config.vm.box = ""mrgcastle/ubuntu-lucid64"
  
   config.vm.synced_folder './', '/vagrant', disabled: false, create: true
 
   config.ssh.forward_agent = true
     
   config.vm.provider :virtualbox do |vb, override|
-    vb.name = 'ubuntu-xenial64'    
+    vb.name = 'ubuntu-lucid64'    
     
     #config.vm.network "forwarded_port", guest: 80, host: 8080
     #config.vm.network "forwarded_port", guest: 443, host: 8443
     
-    #override.vm.provision :shell do |s|
-    #  s.path = "provision/install.sh"
-    #  s.args = "/home/ubuntu ubuntu"
-    #end
+    override.vm.provision :shell do |s|
+      s.path = "provision/install.sh"
+      s.args = "/home/ubuntu ubuntu"
+    end
   end
 
 end

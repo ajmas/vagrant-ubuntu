@@ -5,7 +5,7 @@ This project intends to create a set of Vagrant configurations for various Ubunt
 
 This is an independant effort and is not related to the Ubuntu organisation.
 
-**This branch:** Ubuntu 16.04.x (Xenial Xerus)
+**This branch:** Ubuntu 10.04.x (Lucid Lynx)
 
 ## Structure
 
